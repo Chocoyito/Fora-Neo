@@ -19,23 +19,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginTop="36dp"
         >
         <EditText
             android:id="@+id/et_user"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="35dp"
             android:background="@drawable/custom_input"
             android:drawableStart="@drawable/custom_person_icon"
             android:drawablePadding="12dp"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:hint="Usuario" />
+            android:hint="Correo electrónico" />
 
         <EditText
             android:id="@+id/et_pw"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/custom_input"
@@ -43,7 +44,7 @@
             android:drawablePadding="12dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:hint="Clave" />
+            android:hint="Contraseña" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button"
@@ -52,7 +53,7 @@
             android:layout_marginTop="24dp"
             android:backgroundTint="#376DF6"
             android:background="@drawable/custom_button"
-            android:text="Iniciar sesion"
+            android:text="Iniciar sesión"
             android:textColor="@color/white" />
     </LinearLayout>
 
@@ -70,13 +71,13 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aun no tienes una cuenta?" />
+            android:text="¿Aún no tienes una cuenta?" />
 
         <TextView
             android:id="@+id/tv_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrate!"
+            android:text="¡Registrate!"
             android:textColor="#376DF6" />
 
     </LinearLayout>

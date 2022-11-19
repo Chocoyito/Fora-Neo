@@ -81,7 +81,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:layout_marginTop="1dp"
-                                android:text="Cerrar sesion"
+                                android:text="Cerrar sesión"
                                 android:textColor="@color/gradientOrange"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -114,6 +114,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -122,10 +123,6 @@
                 android:id="@+id/buscarDep"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="10dp"
                 app:cardCornerRadius="15dp">
 
                 <RelativeLayout
@@ -135,20 +132,20 @@
                     android:padding="15dp">
 
 
-                    <!-- <ImageView
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_alignParentEnd="true"
+                    <ImageView
+                        android:layout_width="99dp"
+                        android:layout_height="83dp"
+                        android:layout_alignParentEnd="true"
 
-                         android:layout_alignParentBottom="true"
-                         android:layout_centerHorizontal="true"
-                         android:layout_marginEnd="17dp"
-                         android:layout_marginBottom="-24dp"
-                         android:adjustViewBounds="true"
-                         android:cropToPadding="true"
-                         android:maxHeight="120dp"
-                         android:rotation="0"
-                         <android:src="@drawable/isometric_search" />-->
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="-2dp"
+                        android:layout_marginBottom="-8dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:maxHeight="120dp"
+                        android:rotation="0"
+                        android:src="@drawable/casa" />
 
                     <TextView
                         android:id="@+id/tv_1"
@@ -163,13 +160,13 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
+            <View
+                android:layout_height="1dp" android:layout_width="10dp"/>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/alquilarDep"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
-                android:layout_column="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="10dp"
                 app:cardCornerRadius="15dp">
 
                 <RelativeLayout
@@ -188,6 +185,21 @@
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
+                    <ImageView
+                        android:layout_width="108dp"
+                        android:layout_height="108dp"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="-8dp"
+                        android:layout_marginBottom="-19dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:maxHeight="120dp"
+                        android:rotation="0"
+                        android:src="@drawable/dolar" />
+
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -202,11 +214,9 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/baratos"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="10dp"
                 app:cardCornerRadius="15dp">
 
                 <RelativeLayout
@@ -220,21 +230,38 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
-                        android:text="Mas baratos"
+                        android:text="Más baratos"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="-0.2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:maxHeight="120dp"
+                        android:rotation="-90"
+                        android:src="@drawable/sale" />
+
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
+            <View
+                android:layout_height="1dp" android:layout_width="10dp"/>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/recomendados"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_column="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="10dp"
+
                 app:cardCornerRadius="15dp">
 
                 <RelativeLayout
@@ -252,6 +279,21 @@
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
                         android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="103dp"
+                        android:layout_height="78dp"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="-0.2dp"
+                        android:layout_marginBottom="5dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:maxHeight="120dp"
+                        android:rotation="0"
+                        android:src="@drawable/redheart" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
